@@ -6,7 +6,7 @@ function createStore(){
     return state;
   }
 
-  function dispatch(candyReducer){
+  function dispatch(){
     state = candyReducer(state, action);
   }
 
@@ -14,8 +14,6 @@ function createStore(){
     getState,
     dispatch
   };
-
-
 }
 
 function candyReducer(state = [], action) {
